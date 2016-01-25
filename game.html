@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Squarez</title>
+	<link rel="stylesheet" type="text/css" href="game.css">
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="game.js"></script>
+</head>
+<body></body>
+<script type="text/javascript">
+	var score = 0;
+	var timer = 120; //two minutes
+	var id = 0;
+	var boxArray = [];
+	var numOfBoxes = 0;
+
+	function createDiv(i){
+		var el = document.createElement("div");
+		var nu = document.createElement("img");
+		el.setAttribute("id",""+i+"");
+		el.setAttribute("class","box");
+		el.style.width = ""+getRandomInt(25,100)+"px";
+		el.style.height = el.style.width;
+		el.style.background = "#"+getRandomInt(000000,999999)+"";
+		el.style.opacity = "0.75";
+		el.style.marginRight = "10px";
+		el.style.display = "inline-block";
+		el.style.color = "white";
+		document.getElementsByTagName("body")[0].appendChild(el);
+		id++;
+	}
+</script>
+</html>

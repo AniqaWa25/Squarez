@@ -1,0 +1,20 @@
+body{
+    background-color:#190B07;
+    color: white;
+}
+
+/* centers navbar content */
+    .nav {
+        width: 100%;
+        text-align: center;
+
+    }
+    .nav > li {
+        float: none;
+        display: inline-block;
+}
+
+/* game.html */
+    div.box {
+        position: fixed;
+    }

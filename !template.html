@@ -20,7 +20,6 @@
         
         <!-- Custom JS -->
         <script src="main.js"></script>
-        <script src="game.js"></script>
     </head>
     <body class="wrapper">
         <div class="contentWrapper">    
@@ -28,8 +27,8 @@
             <!-- Nav bar -->
             <nav>
                 <ul class="nav nav-pills">
-                    <li><a href="index.html">Home</a></li>
-                    <li class="active"><a href="game.html">Game</a></li>
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="game.html">Game</a></li>
                     <li><a href="scoreboard.html">Scoreboard</a></li>
                 </ul>
             </nav>
@@ -37,29 +36,4 @@
             
 		</div><!-- contentWrapper-->
     </body>
-    
-    <!-- Set up game -->
-    <script type="text/javascript">
-        var score = 0;
-        var timer = 120; //two minutes
-        var id = 0;
-        var boxArray = [];
-        var numOfBoxes = 0;
-
-        function createDiv(i){
-            var el = document.createElement("div");
-            var nu = document.createElement("img");
-            el.setAttribute("id",""+i+"");
-            el.setAttribute("class","box");
-            el.style.width = ""+getRandomInt(25,100)+"px";
-            el.style.height = el.style.width;
-            el.style.background = "#"+getRandomInt(000000,999999)+"";
-            el.style.opacity = "0.75";
-            el.style.marginRight = "10px";
-            el.style.display = "inline-block";
-            el.style.color = "white";
-            document.getElementsByTagName("body")[0].appendChild(el);
-            id++;
-        }
-    </script>
 </html>

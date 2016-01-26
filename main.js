@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 setInterval(function(){
 	
 	var da = new Date();
@@ -30,35 +29,18 @@ function gameOn(){
 	}
 
 
-=======
->>>>>>> ee7cbc9ccf25a51c25202019cfe31c8d5f1ab445
 $(document).ready(function(){
 	console.log("I'm totally working, honestly");
 
 	document.getElementById("right").style.backgroundImage = "url('Untitled.jpg')";
 
-<<<<<<< HEAD
 
- 	// $("li").mouseover(function(){
-  //       $(this).stop().animate({height:'100px'},{queue:false, duration:600})
-  //   });
- 
-  //   //When mouse is removed
-  //   $("li").mouseout(function(){
-  //       $(this).stop().animate({height:'20px'},{queue:false, duration:600})
-  //   });
-
-//Password & Username Validation Form
-// var correctPassword = "12345";
-// var correctUser = "Aniqa";
-
+//Password Form
 $("form").submit(function(e){
 
 	e.preventDefault();
 
-	var firstname = $("#firstname").val()
-	// var password = $("#password").val()
-	// console.log(firstname + " " + password);
+	var firstname = $("#firstname").val();
 
 	if(firstname ===""){
 	$("h1").html("You need to provide a Player name")
@@ -66,18 +48,9 @@ $("form").submit(function(e){
 		console.log("should redirect now")
 	} 
 
-	// if (password !== "" && correctUser === firstname){
-	// 	console.log(firstname + " YES")
-	// 	$("h1").html("GOOD JOB, DARNIT")
-
-	// } else{
-	// 	console.log(password + " NOOOOOOOOOOO")
-	// 	$("h1").html("Try Again!");
-
-		$("h1").animate({
-			height: "toggle"
-		}, "slow")
-	//}
+		// $("h1").animate({
+		// 	height: "toggle"
+		// }, "slow")
 
 })
 
@@ -93,51 +66,5 @@ $("form").submit(function(e){
 			$("h3").html("Letter")
 		}
 	})
-
-
-	
-	// $("h4").html('Your OS: '+OSName);
-
-	// if(OSName !== ""){
-	// 	$("h4").animate({
-	// 		fontSize: "30px",
-	// 		opacity: .75
-	// 	})
-	// }
-
-	
-	// $("h5").html('Browser name: '+browserName);
-	// if(browserName !== ""){
-	// 	$("h5").animate({
-	// 		fontSize: "30px",
-	// 		opacity: .5,
-	// 	})
-	// }
-
-	// $("h6").html("Screen width = "+screenW+"<br>"+"Screen height = "+screenH);
-	
-	// if((screenW && screenH) !== ""){
-	// 	$("h6").animate({
-	// 		height: "toggle"
-	// 	}, "slow")
-	// }
-
-
-//Resizing stuff happening here
-	
-	// $(window).resize(function(){
-		
-	// 	//animating navigation bar
-	// 	$(".nav-bar").animate({
-	// 		fontSize: "20px",
-	// 		opacity: "toggle"
-	// 	}, "slow")
-	// 	console.log("RESIZING!");
-	// })
-	
-
-=======
-    
->>>>>>> ee7cbc9ccf25a51c25202019cfe31c8d5f1ab445
 
 })

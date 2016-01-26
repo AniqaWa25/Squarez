@@ -81,18 +81,5 @@ $(document).ready(function(){
     	boxArray.push(createDiv(i));
     };
     console.log(boxArray);
-    $('.box').click(function(){
-		$(this).toggle("explode");
-		getRidOfDiv(this.id);
-
-		if(boxArray.length==1){
-			$('body').css("background","url(http://www.reactionface.info/sites/default/files/images/1287666826226.png)");
-			console.log("Make your browser small");
-		}
-		if(boxArray.length==0) alert("YOU WON!!!");
-	});
-	$('html').click(function(){
-		console.log("Ha ha! Missed!")
-	});
    animateBox(0); 
 }); 

@@ -1,7 +1,29 @@
 
-body{
-    /*background-color:#190B07;*/
-    background-color: grey;
+/*body{
+    background-color:#190B07;
+    /*background-color: grey;*/
+    /*background-image: url("Untitled.jpg");*/
+    /*color:  #A52A2A;
+}*/
+
+form{
+  margin: 50px;
+  padding: 20px ;
+}
+
+.btn-lg{
+    padding: 58px 28px;
+    font-size: 27px; 
+}
+
+
+#thing{
+    background-color:#190B07;
+    color:  #A52A2A;
+}
+
+#bg{
+    background-color:#190B07;
     color:  #A52A2A;
 }
 
@@ -22,6 +44,12 @@ body{
     }
 
 .block{
-  margin: 40px 350px;
-  background-color: rgba(0,0,0,0.4);
+  margin: 25px 350px;
+  background-color: rgba(0,0,0,0.3);
 }
+
+.block2{
+  padding: 150px;
+  background-color: rgba(0,0,0,0.3);
+}
+

@@ -20,8 +20,10 @@
         
         <!-- Custom JS -->
         <script src="main.js"></script>
+        <script src="inactiveGame.js"></script>
     </head>
-    <body class="wrapper">
+    <body class="wrapper" id="bg">
+    	
         <div class="contentWrapper">    
             
             <!-- Nav bar -->
@@ -53,6 +55,7 @@
 		<div  style="text-align: center">
 
 			<br>
+			<br>
 			<span id="hours"></span>
 			:
 			<span id="minutes"></span>
@@ -65,7 +68,6 @@
 				<h2>Wanna take a gander at something neat? Click Me!<h2>
 			</div> -->
 			
-			
 			<!-- <h3 > Letter or Number </h3> -->
 
 			<div class="block">
@@ -77,7 +79,7 @@
 					<br>
 					<br>
 					<input type="submit" class="btn btn-info btn-lg active" id="submit" value="Play!" >
-						<!-- <a id="submits" href="game.html" class="btn btn-info btn-lg" role="button">Plays2!</a> -->
+					
 				</form>
 
 			</div>
@@ -88,4 +90,31 @@
             
 		</div><!-- contentWrapper-->
     </body>
+
+    <script type="text/javascript">
+        var score = 0;
+        var timer = 120; //two minutes
+        var id = 0;
+        var boxArray = [];
+        var numOfBoxes = 0;
+
+        function createDiv(i){
+            var el = document.createElement("div");
+            var nu = document.createElement("img");
+            el.setAttribute("id",""+i+"");
+            el.setAttribute("class","box");
+            el.style.width = ""+getRandomInt(25,100)+"px";
+            el.style.height = el.style.width;
+            el.style.background = "#"+getRandomInt(000000,999999)+"";
+            el.style.opacity = "0.75";
+            el.style.marginRight = "10px";
+            el.style.display = "inline-block";
+            el.style.color = "white";
+            document.getElementsByTagName("body")[0].appendChild(el);
+            id++;
+        }
+    </script>
+
+
+    
 </html>

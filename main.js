@@ -14,7 +14,7 @@ setInterval(function(){
 
 	// if(minutes % 2 === 0){
 		// document.body.style.backgroundColor = "#A52A2A"
-		document.body.style.backgroundImage = "url('Untitled.jpg')";
+		// document.body.style.backgroundImage = "url('Untitled.jpg')";
 	// 	console.log(minutes +" EVEN");
 	// } else {
 	// 	document.body.style.backgroundColor = "#808080"

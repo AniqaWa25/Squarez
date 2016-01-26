@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 setInterval(function(){
 	
 	var da = new Date();
@@ -29,11 +30,14 @@ function gameOn(){
 	}
 
 
+=======
+>>>>>>> ee7cbc9ccf25a51c25202019cfe31c8d5f1ab445
 $(document).ready(function(){
 	console.log("I'm totally working, honestly");
 
 	document.getElementById("right").style.backgroundImage = "url('Untitled.jpg')";
 
+<<<<<<< HEAD
 
  	// $("li").mouseover(function(){
   //       $(this).stop().animate({height:'100px'},{queue:false, duration:600})
@@ -132,5 +136,8 @@ $("form").submit(function(e){
 	// })
 	
 
+=======
+    
+>>>>>>> ee7cbc9ccf25a51c25202019cfe31c8d5f1ab445
 
 })

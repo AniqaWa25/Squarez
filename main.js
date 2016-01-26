@@ -11,49 +11,30 @@ setInterval(function(){
 	document.getElementById("milliseconds").innerHTML = da.getMilliseconds();
 
 	var minutes = da.getMinutes();
-
-	// if(minutes % 2 === 0){
-		// document.body.style.backgroundColor = "#A52A2A"
-		// document.body.style.backgroundImage = "url('Untitled.jpg')";
-	// 	console.log(minutes +" EVEN");
-	// } else {
-	// 	document.body.style.backgroundColor = "#808080"
-	// 	console.log(minutes + " ODD");
-	// }
-
 }, 1000)
 
-function gameOn(){
-		document.getElementById("changeUp").innerHTML = "Login!";
 
-	}
-
+// function gameOn(){
+// 		document.getElementById("changeUp").innerHTML = "Login!";
+// 	}
 
 $(document).ready(function(){
 	console.log("I'm totally working, honestly");
 
-	document.getElementById("right").style.backgroundImage = "url('Untitled.jpg')";
-
-
 //Password Form
-$("form").submit(function(e){
+	$("form").submit(function(e){
 
-	e.preventDefault();
+		var firstname = $("#firstname").val();
 
-	var firstname = $("#firstname").val();
-
-	if(firstname ===""){
-	$("h1").html("You need to provide a Player name")
-	} else {
-		console.log("should redirect now")
-	} 
-
-		// $("h1").animate({
-		// 	height: "toggle"
-		// }, "slow")
-
-})
-
+		if(firstname ===""){
+			console.log("EMPTY!!!");
+			$("h1").html("Please provide a Player name");
+			e.preventDefault();
+		} 
+		else {
+			console.log("should redirect now");
+		}
+	})
 
 //Letter or Number keypress
 	$(document).keypress(function(e){

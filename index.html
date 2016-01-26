@@ -28,7 +28,7 @@
             <nav>
                 <ul class="nav nav-pills">
                     <li class="active"><a href="index.html">Home</a></li>
-                    <li><a href="game.html">Game</a></li>
+                    <!-- <li><a href="game.html">Game</a></li> -->
                     <li><a href="scoreboard.html">Scoreboard</a></li>
                 </ul>
             </nav>
@@ -40,30 +40,19 @@
 
 		<div class="right" style="text-align: right">
 
-			<!-- <a href="#" data-img-url="http://vignette2.wikia.nocookie.net/dogs-cats/images/5/51/The_Bengal.jpg/revision/latest?cb=20100128085428" class="lightbox-link">	
-				Kitten
-			</a>
-			<a href="#" data-img-url="http://www.snappypixels.com/wp-content/uploads/2013/08/bunch-of-random-funny-pictures-6.jpg" class="lightbox-link">
-				Doge
-			</a>
-			<a href="#" data-img-url="http://s5.favim.com/orig/74/baby-cheetah-cute-nature-Favim.com-765877.jpg" class="lightbox-link">	
-				Cheetah
-			</a> -->
-
-		
-			<div class="lightbox-outer">
+			<!-- <div class="lightbox-outer">
 				<div class="lightbox-inner">
 					<img src="" alt="" id="lightbox-image">
 				</div>
-			</div>
+			</div> -->
 
 		</div>
 		
-		<div style="text-align: left">
-		</div>
+		<div style="text-align: left"></div>
 
 		<div  style="text-align: center">
 
+			<br>
 			<span id="hours"></span>
 			:
 			<span id="minutes"></span>
@@ -72,25 +61,28 @@
 			.
 			<span id="milliseconds"></span> 
 
-			<div id="changeUp" onclick="gameOn()">
-			
-				<h1>Wanna take a gander at something neat?<h1>
-			
-			</div>
+			<!-- <div id="changeUp" onclick="gameOn()">
+				<h2>Wanna take a gander at something neat? Click Me!<h2>
+			</div> -->
 			
 			
 			<!-- <h3 > Letter or Number </h3> -->
 
-			<form action="game.html" method="POST">
+			<div class="block">
 
-				<h1> Login Form </h1>
-				<input type="text" name="firstname" id="firstname" placeholder="User 1">
-				<br>
-				<br>
-					<input type="submit" id="submit" value="Submit">
-				
-			</form>
-		</div>
+				<form action="game.html" method="POST">
+
+					<h1> Login Form </h1>
+					<input type="text" name="firstname" id="firstname" placeholder="Player 1" style="text-align: center">
+					<br>
+					<br>
+					<input type="submit" class="btn btn-info btn-lg active" id="submit" value="Play!" >
+						<!-- <a id="submits" href="game.html" class="btn btn-info btn-lg" role="button">Plays2!</a> -->
+				</form>
+
+			</div>
+
+		</div> <!--center-->
 
 
             

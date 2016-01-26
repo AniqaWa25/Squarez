@@ -12,14 +12,14 @@ setInterval(function(){
 
 	var minutes = da.getMinutes();
 
-	if(minutes % 2 === 0){
+	// if(minutes % 2 === 0){
 		// document.body.style.backgroundColor = "#A52A2A"
 		document.body.style.backgroundImage = "url('Untitled.jpg')";
-		console.log(minutes +" EVEN");
-	} else {
-		document.body.style.backgroundColor = "#808080"
-		console.log(minutes + " ODD");
-	}
+	// 	console.log(minutes +" EVEN");
+	// } else {
+	// 	document.body.style.backgroundColor = "#808080"
+	// 	console.log(minutes + " ODD");
+	// }
 
 }, 1000)
 

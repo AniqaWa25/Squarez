@@ -13,7 +13,8 @@ setInterval(function(){
 	var minutes = da.getMinutes();
 
 	if(minutes % 2 === 0){
-		document.body.style.backgroundColor = "#A52A2A"
+		// document.body.style.backgroundColor = "#A52A2A"
+		document.body.style.backgroundImage = "url('Untitled.jpg')";
 		console.log(minutes +" EVEN");
 	} else {
 		document.body.style.backgroundColor = "#808080"
@@ -24,25 +25,28 @@ setInterval(function(){
 
 function gameOn(){
 		document.getElementById("changeUp").innerHTML = "Login!";
+
 	}
 
 
 $(document).ready(function(){
-	console.log("I'm totally working, honestly")
+	console.log("I'm totally working, honestly");
+
+	document.getElementById("right").style.backgroundImage = "url('Untitled.jpg')";
 
 
- $("li").mouseover(function(){
-        $(this).stop().animate({height:'100px'},{queue:false, duration:600})
-    });
+ 	// $("li").mouseover(function(){
+  //       $(this).stop().animate({height:'100px'},{queue:false, duration:600})
+  //   });
  
-    //When mouse is removed
-    $("li").mouseout(function(){
-        $(this).stop().animate({height:'20px'},{queue:false, duration:600})
-    });
+  //   //When mouse is removed
+  //   $("li").mouseout(function(){
+  //       $(this).stop().animate({height:'20px'},{queue:false, duration:600})
+  //   });
 
 //Password & Username Validation Form
-var correctPassword = "12345";
-var correctUser = "Aniqa";
+// var correctPassword = "12345";
+// var correctUser = "Aniqa";
 
 $("form").submit(function(e){
 
@@ -88,14 +92,14 @@ $("form").submit(function(e){
 
 
 	
-	$("h4").html('Your OS: '+OSName);
+	// $("h4").html('Your OS: '+OSName);
 
-	if(OSName !== ""){
-		$("h4").animate({
-			fontSize: "30px",
-			opacity: .75
-		})
-	}
+	// if(OSName !== ""){
+	// 	$("h4").animate({
+	// 		fontSize: "30px",
+	// 		opacity: .75
+	// 	})
+	// }
 
 	
 	// $("h5").html('Browser name: '+browserName);
@@ -106,26 +110,26 @@ $("form").submit(function(e){
 	// 	})
 	// }
 
-	$("h6").html("Screen width = "+screenW+"<br>"+"Screen height = "+screenH);
+	// $("h6").html("Screen width = "+screenW+"<br>"+"Screen height = "+screenH);
 	
-	if((screenW && screenH) !== ""){
-		$("h6").animate({
-			height: "toggle"
-		}, "slow")
-	}
+	// if((screenW && screenH) !== ""){
+	// 	$("h6").animate({
+	// 		height: "toggle"
+	// 	}, "slow")
+	// }
 
 
 //Resizing stuff happening here
 	
-	$(window).resize(function(){
+	// $(window).resize(function(){
 		
-		//animating navigation bar
-		$(".nav-bar").animate({
-			fontSize: "20px",
-			opacity: "toggle"
-		}, "slow")
-		console.log("RESIZING!");
-	})
+	// 	//animating navigation bar
+	// 	$(".nav-bar").animate({
+	// 		fontSize: "20px",
+	// 		opacity: "toggle"
+	// 	}, "slow")
+	// 	console.log("RESIZING!");
+	// })
 	
 
 

@@ -57,3 +57,24 @@ h1{
   background-color: rgba(0,0,0,0.3);
 }
 
+/* table for scoreboard.html */
+    h1 {
+    font-size:20px;
+    text-align: center;
+    color: yellow;
+    } 
+    th {
+    font-size:larger;
+    display:inline-block;
+    text-align: center;
+    color: blue
+    } 
+    tr {
+    font-size:larger;
+    display:inline-block;
+    text-align: center;
+    color: blue
+    }
+    div.centered{
+      margin: auto;
+    }
